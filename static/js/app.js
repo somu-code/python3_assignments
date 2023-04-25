@@ -14,9 +14,9 @@ form.addEventListener(
 
 socket.on(
     'message',
-    messages => {
+    message => {
         const li = document.createElement('li');
-        li.innerText = messages;
+        li.innerText = message;
         messages.appendChild(li);
     }
 );
